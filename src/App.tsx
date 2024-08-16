@@ -12,14 +12,14 @@ function App() {
     window.open(
       appUrl,
       'AppPopup',
-      'width=600,height=400,left=100,top=100,menubar=no,toolbar=no,status=no,scrollbars=no,resizable=no'
+      'width=600,height=500,left=100,top=100,menubar=no,toolbar=no,status=no,scrollbars=no,resizable=no'
     );
   };
 
     
   return (
     <>
-     <h1>My Google Map</h1>
+     <h1>Map Sticker</h1>
      <div>
     </div>
     
