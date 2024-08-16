@@ -1,13 +1,20 @@
 
 
 
-import { useEffect, useState } from 'react';
 import './App.css'
-import MyGoogleMap from './components/MyGoogleMap'
 
 function App() {
-  const mapCenter = { lat: -3.745, lng: -38.523 };
 
+  const appUrl = import.meta.env.VITE_APP_URL;
+
+  const openApp = () => {
+    
+    window.open(
+      appUrl,
+      'AppPopup',
+      'width=600,height=400,left=100,top=100,menubar=no,toolbar=no,status=no,scrollbars=no,resizable=no'
+    );
+  };
 
     
   return (
@@ -15,7 +22,15 @@ function App() {
      <h1>My Google Map</h1>
      <div>
     </div>
-     <MyGoogleMap apiKey="AIzaSyDqhaiXZKWzP-AEe2GJrOetGdMyDk9ENBc" center={mapCenter} zoom={10} />
+    
+    <button
+      onClick={openApp}
+      className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+    >
+      Open App
+    </button>
+
+
     </>
   )
 }
