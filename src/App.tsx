@@ -6,13 +6,14 @@ import './App.css'
 function App() {
 
   const appUrl = import.meta.env.VITE_APP_URL;
+  const size = 100
 
   const openApp = () => {
     
     window.open(
       appUrl,
       'AppPopup',
-      'width=600,height=500,left=100,top=100,menubar=no,toolbar=no,status=no,scrollbars=no,resizable=no'
+      'width=700,height=600,left=100,top=100,menubar=no,toolbar=no,status=no,scrollbars=no,resizable=no'
     );
   };
 
@@ -21,7 +22,46 @@ function App() {
     <>
      <h1>Map Sticker</h1>
      <div>
-    </div>
+
+     <img
+      src={"/stickers/1.png"}
+      draggable="true"
+      style={{ cursor: 'grab' }}
+      width={size}
+    />
+      <img
+      src={"/stickers/2.png"}
+      draggable="true"
+      style={{ cursor: 'grab' }}
+      width={size}
+    />
+    <img
+      src={"/stickers/3.png"}
+      draggable="true"
+      style={{ cursor: 'grab' }}
+      width={size}
+    />
+     <img
+      src={"/stickers/4.png"}
+      draggable="true"
+      style={{ cursor: 'grab' }}
+      width={size}
+    />
+      <img
+      src={"/stickers/5.png"}
+      draggable="true"
+      style={{ cursor: 'grab' }}
+      width={size}
+    />
+    <img
+      src={"/stickers/6.png"}
+      draggable="true"
+      style={{ cursor: 'grab' }}
+      width={size}
+    />
+     </div>
+     
+    
     
     <button
       onClick={openApp}
